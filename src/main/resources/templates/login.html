@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Form container */
+.login-container {
+	background-color: #fff;
+	padding: 20px;
+	width: 350px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+/* Heading */
+.login-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+/* Form fields */
+.login-container input[type="email"], .login-container input[type="password"], .login-container .google-login {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+/* Checkbox label */
+.login-container .remember-me {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.login-container .remember-me input {
+	margin-right: 10px;
+}
+
+/* Submit button */
+.login-container input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: #28a745;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+	background-color: #218838;
+}
+
+/* Google login button */
+.login-container .google-login {
+	background-color: #4285F4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.login-container .google-login:hover {
+	background-color: #357ae8;
+}
+
+/* Link styling */
+.login-container .forgot-password {
+	text-align: right;
+	margin-top: 10px;
+}
+
+.login-container .forgot-password a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.login-container .forgot-password a:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+	<div class="login-container">
+		<h2>Login</h2>
+		<form th:action="@{/login}" method="post">
+			<label for="email">Email</label> 
+			<input type="email" id="username" name="email" placeholder="Enter your email" required> 
+			
+			<label for="password">Password</label> 
+			<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+			<div class="remember-me">
+				<input type="checkbox" id="remember" name="remember"> 
+				<label for="remember">Remember Me</label>
+			</div>
+
+			<input type="submit" value="Login">
+			
+			
+			
+			<div class="forgot-password">
+				<a href="#">Forgot your password?</a>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
