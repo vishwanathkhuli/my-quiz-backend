@@ -30,8 +30,8 @@
 	<properties>
 		<java.version>17</java.version>
 		
-		<maven.version>3.8.6</maven.version> <!-- Replace with your version -->
-    <distributionSha256Sum>NEW_SHA256_CHECKSUM</distributionSha256Sum>
+		<maven.version>3.9.9</maven.version> <!-- Replace with your version -->
+    	<distributionSha256Sum>4ec3f26fb1a692473aea0235c300bd20f0f9fe741947c82c1234cefd76ac3a3c</distributionSha256Sum>
 	</properties>
 
 	<dependencies>
