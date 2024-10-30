@@ -1,0 +1,36 @@
+spring:
+ application:
+  name : my-quiz-backend
+ profiles.active: ${ENV:dev}
+
+# ------ MYSQL Database Connection -------
+# datasource:
+#  url: jdbc:mysql://autorack.proxy.rlwy.net:57314/railway
+#  username: root
+#  password: kKkLaPMkRPiJnDVEjdxGSVRdPnOfQikw
+ 
+# jpa:
+#  properties:
+#   hibernate.dialect: org.hibernate.dialect.MySQLDialect
+#  hibernate:
+#   ddl-auto: update
+#  show-sql: true
+#----------------------------------------------
+
+#--------------Okta Connection--------------
+#okta:
+# oauth2:
+#  issuer: https://dev-69395542.okta.com/oauth2/default
+#  client-id: 0oakhh1d3ccqCsOaB5d7
+#  client-secret: 7r_7TgdDJb-nREW1KGak1uq5TyeYNmXQdhTCKKk-pGd9MUeqxt6nd-XNNmqJ5MBG
+ 
+server.port: 8084
+
+jwt:
+  secret: vishwanathkkhuli19012001mangalwadhaliyalkarnatakaisaverysecureandlongkey
+
+logging:
+ level:
+  root : INFO
+  com.example.my_quiz_backend.service : DEBUG
+  
