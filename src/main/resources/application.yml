@@ -24,7 +24,7 @@ spring:
 #  client-id: 0oakhh1d3ccqCsOaB5d7
 #  client-secret: 7r_7TgdDJb-nREW1KGak1uq5TyeYNmXQdhTCKKk-pGd9MUeqxt6nd-XNNmqJ5MBG
  
-server.port: 8084
+server.port: 8080
 
 jwt:
   secret: vishwanathkkhuli19012001mangalwadhaliyalkarnatakaisaverysecureandlongkey
