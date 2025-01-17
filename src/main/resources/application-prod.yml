@@ -1,8 +1,8 @@
 spring:
  datasource:
-  url: jdbc:mysql://mysql.railway.internal:3306/railway
-  username: root
-  password: ZcEkJezIjcRqDEnuwLCTTvyPpHBtxnwH
+  url: jdbc:mysql://sql12.freesqldatabase.com:3306/sql12758167
+  username: sql12758167
+  password: srb1hVqSWM
  
  jpa:
   properties:
